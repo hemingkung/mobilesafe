@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="手机防盗" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip"
+         >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="手机安全号码为:"
+            android:textColor="#00f"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/tv_lost_protected_setting_safe_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="123"
+            android:textColor="#00f"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginTop="10dip"
+        android:layout_marginBottom="5dip">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="防盗保护设置"
+            android:textColor="#00f"
+            android:layout_centerVertical="true"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/cb_lost_protected_setting_protecting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="防盗保护已经开启"
+            android:checked="true"
+            android:textColor="#00f"
+            android:textSize="18sp" />
+    </RelativeLayout>
+
+    <include layout="@layout/line"/>
+    
+    <TextView  android:id="@+id/tv_lost_protected_setting_reset"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="重新进入设置向导"
+            android:textColor="#00f"
+            android:textSize="18sp" 
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"/>
+    
+    <include layout="@layout/line"/>
+    
+    <TextView style="@style/text_content_style"
+        android:text="#*location*#获取手机的位置\n
+#*delete*#手机设置为出厂模式\n
+#*lockscreen*#给手机加密 锁定屏幕\n
+#*alarm*#发出报警音乐"
+android:textSize="18sp"/>
+</LinearLayout>

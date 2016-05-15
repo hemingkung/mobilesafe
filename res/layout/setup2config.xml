@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:text="2.手机卡的绑定"
+        android:gravity="left"
+        style="@style/text_title_style"/>
+
+    <View style="@style/view_divide_line_style"/>
+    
+    <TextView 
+        style="@style/text_content_style"
+        android:text="一旦sim卡绑定\n
+下次重启手机如果sim卡发生改变,就发送报警短信"/>
+    
+    <RelativeLayout 
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/rl_sim_bind_bg">
+        
+        <TextView android:text="点击绑定sim卡"
+            style="@style/text_content_style"/>
+        
+        <ImageView android:id="@+id/iv_bind_sim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/switch_off_normal"/>
+    </RelativeLayout>
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView style="@style/image_start_offline_style"/>
+        <ImageView style="@style/image_start_online_style"/>
+        <ImageView style="@style/image_start_offline_style"/>
+        <ImageView style="@style/image_start_offline_style"/> 
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/bind"/>
+        
+        <Button style="@style/button_pre_style"
+            android:onClick="pre"/>
+        
+        <Button style="@style/button_next_style"
+            android:onClick="next"
+            />
+    </RelativeLayout>
+</LinearLayout>

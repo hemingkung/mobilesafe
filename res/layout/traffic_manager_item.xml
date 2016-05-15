@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/iv_appicon"
+        android:layout_width="35dip"
+        android:layout_height="35dip"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_launcher" />
+
+    <TextView
+        android:id="@+id/tv_appname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/iv_appicon"
+        android:text="我最摇摆"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/tv_apptarffic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="20MB"
+        android:textColor="@android:color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_appname"
+        android:layout_toRightOf="@id/iv_appicon"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/tv_apptx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="80dp"
+            android:text="上传：20MB"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/tv_apprx"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="下载:20MB"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+</RelativeLayout>

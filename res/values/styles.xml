@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="text_title_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#42E700</item>
+        <item name="android:textSize">25sp</item>
+    </style>
+    
+
+    <style name="view_divide_line_style">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">1dip</item>
+        <item name="android:layout_marginTop">5dip</item>
+        <item name="android:background">@drawable/devide_line</item>
+    </style>
+    
+
+    <style name="text_content_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#42E700</item>
+        <item name="android:layout_marginTop">5dip</item>
+    </style>
+
+    <style name="image_start_online_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginRight">5dip</item>
+        <item name="android:src">@android:drawable/presence_online</item>
+    </style>
+    
+    <style name="image_start_offline_style" parent="image_start_online_style">
+        <item name="android:src">@android:drawable/presence_invisible</item>
+    </style>
+    
+
+    <style name="button_next_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentRight">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:text">下一步</item>
+        <item name="android:drawableRight">@drawable/next</item>
+    </style>
+
+    <style name="button_pre_style">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_alignParentLeft">true</item>
+        <item name="android:layout_alignParentBottom">true</item>
+        <item name="android:text">上一步</item>
+        <item name="android:drawableLeft">@drawable/previous</item>
+    </style>
+    
+    
+</resources>

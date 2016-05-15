@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="任务管理" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dip" >
+
+        <TextView
+            android:id="@+id/tv_task_manager_task_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进程数:20" />
+
+        <TextView
+            android:id="@+id/tv_task_manager_task_memory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="可用/总内存：50MB/700MB" />
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="fill_parent"
+        android:layout_height="0dip"
+        android:layout_weight="1" >
+
+        <!--
+       android:cacheColorHint="#00000000" 缓存的颜色  默认是黄色
+       android:divider="#00ffffff" 分割线
+       android:dividerHeight="3.0dip" 分割线的宽度
+        -->
+
+        <ListView
+            android:id="@+id/lv_taskmanager"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#fff"
+            android:dividerHeight="1.0dip"
+            android:fastScrollEnabled="true"
+            android:paddingLeft="3.0dip"
+            android:paddingRight="3.0dip" />
+
+        <RelativeLayout
+            android:id="@+id/rl_loading"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent" >
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:orientation="vertical" >
+
+                <ProgressBar
+                    android:id="@+id/pb"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dip"
+                    android:text="正在加载应用程序"
+                    android:textColor="#fff"
+                    android:textSize="22sp" />
+            </LinearLayout>
+        </RelativeLayout>
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="kill_process"
+            android:text="一键清理" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="displaysetup"
+            android:text="程序设置" />
+    </LinearLayout>
+
+</LinearLayout>

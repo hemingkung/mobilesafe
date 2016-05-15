@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="updateinfo_url">http://192.168.1.100:8080/web/updateinfo.xml</string>
+    <string name="address_url">http://192.168.1.105:8080/web/address.db</string>
+    
+</resources>

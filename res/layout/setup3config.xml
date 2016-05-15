@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:text="3.设置安全号码"
+        android:gravity="left"
+        style="@style/text_title_style"/>
+
+    <View style="@style/view_divide_line_style"/>
+    
+    <TextView 
+        style="@style/text_content_style"
+        android:text="一旦sim卡变更\n
+报警短信会发送到安全号码上"/>
+    
+    <EditText android:id="@+id/et_safe_number"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:hint="请输入安全号码,或者选择一个号码"/>
+    <Button android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:onClick="select_contact"
+        android:text="选择联系人"/>
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView style="@style/image_start_offline_style"/>
+        <ImageView style="@style/image_start_offline_style"/>
+        <ImageView style="@style/image_start_online_style"/>
+        <ImageView style="@style/image_start_offline_style"/> 
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/phone"/>
+        
+        <Button style="@style/button_pre_style"
+            android:onClick="pre"/>
+        
+        <Button style="@style/button_next_style"
+            android:onClick="next"
+            />
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    
+    <TextView
+        style="@style/text_title_style"
+        android:text="全山手机卫士"
+       />
+    
+    <View style="@style/view_divide_line_style"/>
+    
+    <LinearLayout android:id="@+id/ll_ad"
+            android:layout_width="fill_parent"
+    android:layout_height="wrap_content"/>
+
+    <!-- 
+    android:numColumns="3" 一行显示3列
+    android:cacheColorHint="@android:color/transparent" 指定缓存颜色为透明的
+    android:listSelector="@android:color/transparent"   指定条目被选中的颜色为透明的（系统默认是黄色）
+     -->
+    <GridView android:id="@+id/gv_main"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="10dip"
+        android:numColumns="3"
+        android:cacheColorHint="@android:color/transparent"
+        android:listSelector="@android:color/transparent"
+        android:horizontalSpacing="0.1dip"
+        android:verticalSpacing="0.1dip"/>
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="高级工具"
+       />
+    
+    <View style="@style/view_divide_line_style"/>
+    
+    <TextView android:id="@+id/tv_atools_add_ipcall"
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="添加ip拨号"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"/>
+    
+    <include layout="@layout/line"/>
+    
+    <TextView android:id="@+id/tv_atools_address_query"
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="号码归属地查询"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"/>
+    
+    <include layout="@layout/line"/>
+    
+    <TextView android:id="@+id/tv_atools_sms_backup"
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="短信备份"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"/>
+    
+    <include layout="@layout/line"/>
+    
+    <TextView android:id="@+id/tv_atools_sms_restore"
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="短信的还原"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"/>
+    
+    <include layout="@layout/line"/>
+    
+    <TextView android:id="@+id/tv_atools_app_lock"
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="程序锁"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"/>
+    
+    <include layout="@layout/line"/>
+    <TextView android:id="@+id/tv_atools_common_number"
+            android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="常用号码"
+    android:textColor="@android:color/white"
+    android:textSize="20sp"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"/>
+    
+    <include layout="@layout/line"/>
+
+</LinearLayout>

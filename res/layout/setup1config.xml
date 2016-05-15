@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView 
+        android:text="1.欢迎使用手机防盗"
+        android:gravity="left"
+        style="@style/text_title_style"/>
+
+    <View style="@style/view_divide_line_style"/>
+    
+    <TextView 
+        style="@style/text_content_style"
+        android:text="您的手机防盗卫士:"/>
+    
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"
+            />
+        
+        <TextView 
+            android:text="sim卡变更报警"
+            style="@style/text_content_style"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"
+            />
+        
+        <TextView 
+            android:text="gps追踪"
+            style="@style/text_content_style"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"
+            />
+        
+        <TextView 
+            android:text="远程销毁数据"
+            style="@style/text_content_style"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@android:drawable/btn_star_big_on"
+            />
+        
+        <TextView 
+            android:text="远程锁屏"
+            style="@style/text_content_style"/>
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+        <ImageView style="@style/image_start_online_style"/>
+        <ImageView style="@style/image_start_offline_style"/>
+        <ImageView style="@style/image_start_offline_style"/>
+        <ImageView style="@style/image_start_offline_style"/> 
+    </LinearLayout>
+    
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        
+        <ImageView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:src="@drawable/setup1"/>
+        
+        <Button style="@style/button_next_style"
+            android:onClick="next"
+            />
+    </RelativeLayout>
+</LinearLayout>

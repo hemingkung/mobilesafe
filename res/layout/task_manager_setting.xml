@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="进程管理设置" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="显示设置"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_task_manager_setting_display"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:checked="true"
+            android:text="显示系统进程" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="自动清理进程"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_task_manager_setting_auto_clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="锁屏清理进程" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    
+</LinearLayout>

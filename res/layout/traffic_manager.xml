@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    <TextView
+        style="@style/text_title_style"
+        android:text="流量管理"
+       />
+    
+    <View style="@style/view_divide_line_style"/>
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="2g/3g" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="wifi" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView android:id="@+id/tv_traffic_manager_mobile"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="200Mb" />
+
+            <TextView android:id="@+id/tv_traffic_manager_wifi"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="50MB" />
+        </TableRow>
+    </TableLayout>
+    
+    <SlidingDrawer 
+            android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:handle="@+id/handle"
+    android:content="@+id/lv_traffic_manager_content"
+    android:orientation="vertical">
+        
+        <ImageView android:id="@id/handle"
+                android:layout_width="30dp"
+    android:layout_height="30dp"
+    android:src="@drawable/notification"/>
+        <ListView android:id="@id/lv_traffic_manager_content"
+                        android:layout_width="fill_parent"
+    android:layout_height="fill_parent"></ListView>
+    </SlidingDrawer>
+
+</LinearLayout>

@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        style="@style/text_title_style"
+        android:text="设置中心" />
+
+    <View style="@style/view_divide_line_style" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="自动更新设置"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_ceneter_auto_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="自动更新已开启" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="自动ip拨号"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_ceneter_auto_ipcall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="ip拨号已关闭" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开启归属地服务"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_ceneter_address_query"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="归属地查询已关闭" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+
+    <TextView
+        android:id="@+id/tv_setting_center_change_show_style"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="更改来电归属地显示的风格"
+        android:textColor="#00f"
+        android:textSize="20sp" />
+
+    <include layout="@layout/divide_line" />
+    <TextView
+        android:id="@+id/tv_setting_center_change_location"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:text="更改来电归属地显示的位置"
+        android:textColor="#00f"
+        android:textSize="20sp" />
+
+    <include layout="@layout/divide_line" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开启来电黑名单服务"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_ceneter_blacknumber_call"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="来电黑名单已关闭" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="开启程序锁服务"
+            android:textColor="#00f"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/cb_setting_ceneter_app_lock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="程序锁已关闭" />
+    </RelativeLayout>
+
+    <include layout="@layout/divide_line" />
+</LinearLayout>
+</ScrollView>

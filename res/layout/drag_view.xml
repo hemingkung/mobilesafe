@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView android:id="@+id/tv_info"
+        style="@style/text_content_style"
+        android:layout_marginTop="20dp"
+        android:text="按住拖动归属地显示的位置\n
+按手机返回键后立刻生效"/>
+    
+    
+    <RelativeLayout android:id="@+id/rl_change_location"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:background="@drawable/call_locate_orange">
+        
+        <ImageView android:id="@+id/iv_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon5"/>
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_icon"
+            android:textColor="#0f0"
+            android:layout_centerVertical="true"
+            android:text="归属地位置"/>
+    </RelativeLayout>
+
+</RelativeLayout>
