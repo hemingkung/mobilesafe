@@ -1,0 +1,871 @@
+cn.itcast.mobilesafe.MobileSafeApplication -> cn.itcast.mobilesafe.MobileSafeApplication:
+    java.lang.String packname -> a
+    java.lang.String getPackname() -> a
+    void setPackname(java.lang.String) -> a
+    void onCreate() -> onCreate
+cn.itcast.mobilesafe.activity.AddIpCallActivity -> cn.itcast.mobilesafe.activity.AddIpCallActivity:
+    android.widget.EditText et_ip_number -> a
+    android.content.SharedPreferences sp -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void add(android.view.View) -> add
+cn.itcast.mobilesafe.activity.AddressQueryActivity -> cn.itcast.mobilesafe.activity.AddressQueryActivity:
+    android.widget.EditText et_number -> a
+    android.widget.TextView tv_info -> b
+    cn.itcast.mobilesafe.engine.AddressQueryService serivce -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void query(android.view.View) -> query
+cn.itcast.mobilesafe.activity.AppLockManagerActivity -> cn.itcast.mobilesafe.activity.AppLockManagerActivity:
+    android.widget.ListView lv_applockmanager -> a
+    android.widget.RelativeLayout rl_loading -> b
+    cn.itcast.mobilesafe.engine.AppInfoService appInfoService -> c
+    java.util.List appInfos -> d
+    java.util.List appLocks -> e
+    cn.itcast.mobilesafe.activity.AppLockManagerActivity$AppLockManagerAdapter mAdapter -> f
+    cn.itcast.mobilesafe.dao.AppLockDao appLockDao -> g
+    android.os.Handler mHandler -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    cn.itcast.mobilesafe.dao.AppLockDao access$0(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> a
+    void access$1(cn.itcast.mobilesafe.activity.AppLockManagerActivity,java.util.List) -> a
+    void access$2(cn.itcast.mobilesafe.activity.AppLockManagerActivity,cn.itcast.mobilesafe.activity.AppLockManagerActivity$AppLockManagerAdapter) -> a
+    android.widget.ListView access$3(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> b
+    cn.itcast.mobilesafe.activity.AppLockManagerActivity$AppLockManagerAdapter access$4(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> c
+    android.widget.RelativeLayout access$5(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> d
+    java.util.List access$6(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> e
+    java.util.List access$7(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> f
+    cn.itcast.mobilesafe.engine.AppInfoService access$8(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> g
+    void access$9(cn.itcast.mobilesafe.activity.AppLockManagerActivity,java.util.List) -> b
+    android.os.Handler access$10(cn.itcast.mobilesafe.activity.AppLockManagerActivity) -> h
+cn.itcast.mobilesafe.activity.AppLockManagerActivity$1 -> cn.itcast.mobilesafe.activity.m:
+    cn.itcast.mobilesafe.activity.AppLockManagerActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+cn.itcast.mobilesafe.activity.AppLockManagerActivity$2 -> cn.itcast.mobilesafe.activity.n:
+    cn.itcast.mobilesafe.activity.AppLockManagerActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.AppLockManagerActivity$AppLockManagerAdapter -> cn.itcast.mobilesafe.activity.l:
+    android.view.LayoutInflater mInflater -> a
+    cn.itcast.mobilesafe.activity.AppLockManagerActivity this$0 -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.itcast.mobilesafe.activity.AppLockManagerActivity$MyOnItemClickListener -> cn.itcast.mobilesafe.activity.aa:
+    cn.itcast.mobilesafe.activity.AppLockManagerActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+cn.itcast.mobilesafe.activity.AppLockManagerActivity$ViewHolder -> cn.itcast.mobilesafe.activity.am:
+    android.widget.ImageView iv_appicon -> a
+    android.widget.TextView tv_appname -> b
+    android.widget.ImageView iv_lock -> c
+cn.itcast.mobilesafe.activity.AppManagerActivity -> cn.itcast.mobilesafe.activity.AppManagerActivity:
+    android.widget.RelativeLayout rl_loading -> a
+    android.widget.ListView lv_appmanage -> b
+    android.widget.TextView tv_title -> c
+    android.content.pm.PackageManager pm -> d
+    cn.itcast.mobilesafe.engine.AppInfoService appInfoService -> e
+    java.util.List appInfos -> f
+    java.util.List userAppInfos -> g
+    boolean isAllApp -> h
+    cn.itcast.mobilesafe.adapter.AppManagerAdapter mAdapter -> i
+    android.widget.PopupWindow mPopupWindow -> j
+    android.os.Handler mHandler -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    void initData() -> a
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void onClick(android.view.View) -> onClick
+    cn.itcast.mobilesafe.adapter.AppManagerAdapter access$0(cn.itcast.mobilesafe.activity.AppManagerActivity) -> a
+    boolean access$1(cn.itcast.mobilesafe.activity.AppManagerActivity) -> b
+    java.util.List access$2(cn.itcast.mobilesafe.activity.AppManagerActivity) -> c
+    java.util.List access$3(cn.itcast.mobilesafe.activity.AppManagerActivity) -> d
+    android.widget.RelativeLayout access$4(cn.itcast.mobilesafe.activity.AppManagerActivity) -> e
+    void access$5(cn.itcast.mobilesafe.activity.AppManagerActivity,cn.itcast.mobilesafe.adapter.AppManagerAdapter) -> a
+    android.widget.ListView access$6(cn.itcast.mobilesafe.activity.AppManagerActivity) -> f
+    void access$7(cn.itcast.mobilesafe.activity.AppManagerActivity,android.widget.PopupWindow) -> a
+    android.widget.PopupWindow access$8(cn.itcast.mobilesafe.activity.AppManagerActivity) -> g
+    android.content.pm.PackageManager access$9(cn.itcast.mobilesafe.activity.AppManagerActivity) -> h
+    cn.itcast.mobilesafe.engine.AppInfoService access$10(cn.itcast.mobilesafe.activity.AppManagerActivity) -> i
+    void access$11(cn.itcast.mobilesafe.activity.AppManagerActivity,java.util.List) -> a
+    void access$12(cn.itcast.mobilesafe.activity.AppManagerActivity,java.util.List) -> b
+    android.os.Handler access$13(cn.itcast.mobilesafe.activity.AppManagerActivity) -> j
+cn.itcast.mobilesafe.activity.AppManagerActivity$1 -> cn.itcast.mobilesafe.activity.r:
+    cn.itcast.mobilesafe.activity.AppManagerActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+cn.itcast.mobilesafe.activity.AppManagerActivity$2 -> cn.itcast.mobilesafe.activity.s:
+    cn.itcast.mobilesafe.activity.AppManagerActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.AppManagerActivity$MyOnClickListener -> cn.itcast.mobilesafe.activity.al:
+    int position -> a
+    cn.itcast.mobilesafe.activity.AppManagerActivity this$0 -> b
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.AppManagerActivity$MyOnItemClickListener -> cn.itcast.mobilesafe.activity.k:
+    cn.itcast.mobilesafe.activity.AppManagerActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+cn.itcast.mobilesafe.activity.AtoolsActivity -> cn.itcast.mobilesafe.activity.AtoolsActivity:
+    android.widget.TextView tv_atools_add_ipcall -> a
+    android.widget.TextView tv_atools_address_query -> b
+    android.widget.TextView tv_atools_sms_backup -> c
+    android.widget.TextView tv_atools_sms_restore -> d
+    android.widget.TextView tv_atools_app_lock -> e
+    android.widget.TextView tv_atools_common_number -> f
+    android.app.ProgressDialog mPd -> g
+    cn.itcast.mobilesafe.engine.SmsInfoService smsInfoService -> h
+    android.content.SharedPreferences sp -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    android.app.ProgressDialog access$0(cn.itcast.mobilesafe.activity.AtoolsActivity) -> a
+    android.content.SharedPreferences access$2(cn.itcast.mobilesafe.activity.AtoolsActivity) -> b
+cn.itcast.mobilesafe.activity.AtoolsActivity$1 -> cn.itcast.mobilesafe.activity.i:
+    cn.itcast.mobilesafe.activity.AtoolsActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.AtoolsActivity$2 -> cn.itcast.mobilesafe.activity.h:
+    cn.itcast.mobilesafe.activity.AtoolsActivity this$0 -> a
+    android.widget.EditText val$et_pwd -> b
+    android.app.AlertDialog val$dialog -> c
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.AtoolsActivity$3 -> cn.itcast.mobilesafe.activity.g:
+    cn.itcast.mobilesafe.activity.AtoolsActivity this$0 -> a
+    android.app.AlertDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.BlackNumberListActivity -> cn.itcast.mobilesafe.activity.BlackNumberListActivity:
+    android.widget.TextView tv_add_blacknumber -> a
+    android.widget.ListView lv_blacknumber -> b
+    android.widget.TextView empty -> c
+    android.view.View view -> d
+    android.view.LayoutInflater mInflater -> e
+    android.widget.EditText et_number_blacknumber_dialog -> f
+    android.widget.Button bt_ok_blacknumber_dialog -> g
+    android.widget.Button bt_cancel_blacknumber_dialog -> h
+    cn.itcast.mobilesafe.dao.BlackNumberDao blackNumberDao -> i
+    android.app.AlertDialog dialog -> j
+    cn.itcast.mobilesafe.adapter.BlackNumberAdapter mAdapter -> k
+    int flag -> l
+    java.lang.String blacknumber -> m
+    void onCreate(android.os.Bundle) -> onCreate
+    void onNewIntent(android.content.Intent) -> onNewIntent
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.CommonNumberActivity -> cn.itcast.mobilesafe.activity.CommonNumberActivity:
+    android.widget.ExpandableListView elv_commom_number -> a
+    cn.itcast.mobilesafe.engine.CommonNumberService service -> b
+    android.widget.SimpleExpandableListAdapter adapter -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    android.widget.SimpleExpandableListAdapter access$0(cn.itcast.mobilesafe.activity.CommonNumberActivity) -> a
+cn.itcast.mobilesafe.activity.CommonNumberActivity$MyOnChildClickListener -> cn.itcast.mobilesafe.activity.f:
+    cn.itcast.mobilesafe.activity.CommonNumberActivity this$0 -> a
+    boolean onChildClick(android.widget.ExpandableListView,android.view.View,int,int,long) -> onChildClick
+cn.itcast.mobilesafe.activity.ContactListActivity -> cn.itcast.mobilesafe.activity.ContactListActivity:
+    android.widget.ListView lv_contact -> a
+    cn.itcast.mobilesafe.engine.ContactInfoService service -> b
+    cn.itcast.mobilesafe.adapter.ContactInfoAdapter mAdater -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    cn.itcast.mobilesafe.adapter.ContactInfoAdapter access$0(cn.itcast.mobilesafe.activity.ContactListActivity) -> a
+cn.itcast.mobilesafe.activity.ContactListActivity$MyOnItemClickListener -> cn.itcast.mobilesafe.activity.ar:
+    cn.itcast.mobilesafe.activity.ContactListActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+cn.itcast.mobilesafe.activity.DragViewActivity -> cn.itcast.mobilesafe.activity.DragViewActivity:
+    android.widget.RelativeLayout rl_change_location -> a
+    android.widget.TextView tv_info -> b
+    int initX -> c
+    int initY -> d
+    int heightPixels -> e
+    int widthPixels -> f
+    android.content.SharedPreferences sp -> g
+    void onCreate(android.os.Bundle) -> onCreate
+    android.widget.RelativeLayout access$0(cn.itcast.mobilesafe.activity.DragViewActivity) -> a
+    int access$1(cn.itcast.mobilesafe.activity.DragViewActivity) -> b
+    int access$2(cn.itcast.mobilesafe.activity.DragViewActivity) -> c
+    int access$3(cn.itcast.mobilesafe.activity.DragViewActivity) -> d
+    android.widget.TextView access$4(cn.itcast.mobilesafe.activity.DragViewActivity) -> e
+    int access$5(cn.itcast.mobilesafe.activity.DragViewActivity) -> f
+    android.content.SharedPreferences access$6(cn.itcast.mobilesafe.activity.DragViewActivity) -> g
+cn.itcast.mobilesafe.activity.DragViewActivity$MyOnTouchListener -> cn.itcast.mobilesafe.activity.j:
+    int startX -> a
+    int startY -> b
+    cn.itcast.mobilesafe.activity.DragViewActivity this$0 -> c
+    boolean onTouch(android.view.View,android.view.MotionEvent) -> onTouch
+cn.itcast.mobilesafe.activity.EnterPasswordActivity -> cn.itcast.mobilesafe.activity.EnterPasswordActivity:
+    android.widget.ImageView iv_appicon -> a
+    android.widget.TextView tv_appname -> b
+    android.widget.EditText et_pwd -> c
+    android.content.SharedPreferences sp -> d
+    android.content.pm.PackageManager pm -> e
+    cn.itcast.mobilesafe.activity.EnterPasswordActivity$MyServiceConnection conn -> f
+    cn.itcast.mobilesafe.inter.IService ibinder -> g
+    java.lang.String packageName -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void ok(android.view.View) -> ok
+    void onDestroy() -> onDestroy
+    void access$0(cn.itcast.mobilesafe.activity.EnterPasswordActivity,cn.itcast.mobilesafe.inter.IService) -> a
+    void access$1$2d0a2a8e(cn.itcast.mobilesafe.activity.EnterPasswordActivity) -> a
+cn.itcast.mobilesafe.activity.EnterPasswordActivity$MyServiceConnection -> cn.itcast.mobilesafe.activity.aj:
+    cn.itcast.mobilesafe.activity.EnterPasswordActivity this$0 -> a
+    void onServiceConnected(android.content.ComponentName,android.os.IBinder) -> onServiceConnected
+    void onServiceDisconnected(android.content.ComponentName) -> onServiceDisconnected
+cn.itcast.mobilesafe.activity.LostProtectedActivity -> cn.itcast.mobilesafe.activity.LostProtectedActivity:
+    android.content.SharedPreferences sp -> a
+    android.view.LayoutInflater mInflater -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    android.content.SharedPreferences access$0(cn.itcast.mobilesafe.activity.LostProtectedActivity) -> a
+    void access$1(cn.itcast.mobilesafe.activity.LostProtectedActivity) -> b
+cn.itcast.mobilesafe.activity.LostProtectedActivity$1 -> cn.itcast.mobilesafe.activity.z:
+    cn.itcast.mobilesafe.activity.LostProtectedActivity this$0 -> a
+    android.widget.EditText val$et_pwd -> b
+    android.app.AlertDialog val$dialog -> c
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.LostProtectedActivity$2 -> cn.itcast.mobilesafe.activity.v:
+    cn.itcast.mobilesafe.activity.LostProtectedActivity this$0 -> a
+    android.app.AlertDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.LostProtectedActivity$3 -> cn.itcast.mobilesafe.activity.x:
+    cn.itcast.mobilesafe.activity.LostProtectedActivity this$0 -> a
+    android.widget.EditText val$et_pwd_first_entry_dialog -> b
+    android.widget.EditText val$et_repwd_first_entry_dialog -> c
+    android.app.AlertDialog val$dialog -> d
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.LostProtectedActivity$4 -> cn.itcast.mobilesafe.activity.u:
+    cn.itcast.mobilesafe.activity.LostProtectedActivity this$0 -> a
+    android.app.AlertDialog val$dialog -> b
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.LostProtectedSettingActivity -> cn.itcast.mobilesafe.activity.LostProtectedSettingActivity:
+    android.widget.TextView tv_lost_protected_setting_safe_number -> a
+    android.widget.CheckBox cb_lost_protected_setting_protecting -> b
+    android.widget.TextView tv_lost_protected_setting_reset -> c
+    android.content.SharedPreferences sp -> d
+    android.app.admin.DevicePolicyManager devicePolicyManager -> e
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    android.content.SharedPreferences access$0(cn.itcast.mobilesafe.activity.LostProtectedSettingActivity) -> a
+cn.itcast.mobilesafe.activity.LostProtectedSettingActivity$1 -> cn.itcast.mobilesafe.activity.a:
+    cn.itcast.mobilesafe.activity.LostProtectedSettingActivity this$0 -> a
+    android.widget.EditText val$et_change_name -> b
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.LostProtectedSettingActivity$2 -> cn.itcast.mobilesafe.activity.b:
+    cn.itcast.mobilesafe.activity.LostProtectedSettingActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.MainActivity -> cn.itcast.mobilesafe.activity.MainActivity:
+    android.widget.GridView gv_main -> a
+    cn.itcast.mobilesafe.adapter.MainAdapter mAdapter -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onResume() -> onResume
+cn.itcast.mobilesafe.activity.MainActivity$MyOnItemClickListener -> cn.itcast.mobilesafe.activity.t:
+    cn.itcast.mobilesafe.activity.MainActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+cn.itcast.mobilesafe.activity.SettingCenterActivity -> cn.itcast.mobilesafe.activity.SettingCenterActivity:
+    android.widget.CheckBox cb_setting_ceneter_auto_update -> a
+    android.widget.CheckBox cb_setting_ceneter_auto_ipcall -> b
+    android.widget.CheckBox cb_setting_ceneter_address_query -> c
+    android.widget.TextView tv_setting_center_change_show_style -> d
+    android.widget.TextView tv_setting_center_change_location -> e
+    android.widget.CheckBox cb_setting_ceneter_blacknumber_call -> f
+    android.widget.CheckBox cb_setting_ceneter_app_lock -> g
+    android.content.SharedPreferences sp -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    android.content.SharedPreferences access$0(cn.itcast.mobilesafe.activity.SettingCenterActivity) -> a
+cn.itcast.mobilesafe.activity.SettingCenterActivity$1 -> cn.itcast.mobilesafe.activity.p:
+    cn.itcast.mobilesafe.activity.SettingCenterActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.SettingCenterActivity$2 -> cn.itcast.mobilesafe.activity.o:
+    cn.itcast.mobilesafe.activity.SettingCenterActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.Setup1ConfigActivity -> cn.itcast.mobilesafe.activity.Setup1ConfigActivity:
+    void onCreate(android.os.Bundle) -> onCreate
+    void next(android.view.View) -> next
+cn.itcast.mobilesafe.activity.Setup2ConfigActivity -> cn.itcast.mobilesafe.activity.Setup2ConfigActivity:
+    android.widget.ImageView iv_bind_sim -> a
+    android.telephony.TelephonyManager tm -> b
+    android.content.SharedPreferences sp -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void pre(android.view.View) -> pre
+    void next(android.view.View) -> next
+cn.itcast.mobilesafe.activity.Setup3ConfigActivity -> cn.itcast.mobilesafe.activity.Setup3ConfigActivity:
+    android.widget.EditText et_safe_number -> a
+    android.content.SharedPreferences sp -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void select_contact(android.view.View) -> select_contact
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void pre(android.view.View) -> pre
+    void next(android.view.View) -> next
+cn.itcast.mobilesafe.activity.Setup4ConfigActivity -> cn.itcast.mobilesafe.activity.Setup4ConfigActivity:
+    android.content.SharedPreferences sp -> a
+    android.widget.CheckBox cb_setup4_start_protect -> b
+    android.app.admin.DevicePolicyManager devicePolicyManager -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void pre(android.view.View) -> pre
+    void next(android.view.View) -> next
+    void onClick(android.view.View) -> onClick
+    void activeAdmin() -> a
+    android.widget.CheckBox access$0(cn.itcast.mobilesafe.activity.Setup4ConfigActivity) -> a
+    android.content.SharedPreferences access$1(cn.itcast.mobilesafe.activity.Setup4ConfigActivity) -> b
+    void access$2(cn.itcast.mobilesafe.activity.Setup4ConfigActivity) -> c
+cn.itcast.mobilesafe.activity.Setup4ConfigActivity$1 -> cn.itcast.mobilesafe.activity.c:
+    cn.itcast.mobilesafe.activity.Setup4ConfigActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.Setup4ConfigActivity$2 -> cn.itcast.mobilesafe.activity.d:
+    cn.itcast.mobilesafe.activity.Setup4ConfigActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.SplashActivity -> cn.itcast.mobilesafe.activity.SplashActivity:
+    android.widget.TextView tv_version -> a
+    android.content.pm.PackageManager pm -> b
+    java.lang.String version -> c
+    cn.itcast.mobilesafe.engine.UpdateInfoService updateInfoService -> d
+    cn.itcast.mobilesafe.domain.UpdateInfo updateInfo -> e
+    android.app.ProgressDialog mPd -> f
+    android.widget.RelativeLayout rl_splash -> g
+    long startTime -> h
+    android.content.SharedPreferences sp -> i
+    cn.itcast.mobilesafe.engine.AddressQueryService addressQueryService -> j
+    android.os.Handler mHandler -> k
+    void onCreate(android.os.Bundle) -> onCreate
+    java.lang.String getVersion() -> a
+    void access$0(cn.itcast.mobilesafe.activity.SplashActivity) -> a
+    void access$1(cn.itcast.mobilesafe.activity.SplashActivity) -> b
+    android.app.ProgressDialog access$2(cn.itcast.mobilesafe.activity.SplashActivity) -> c
+    void access$3(cn.itcast.mobilesafe.activity.SplashActivity) -> d
+    android.os.Handler access$4(cn.itcast.mobilesafe.activity.SplashActivity) -> e
+    cn.itcast.mobilesafe.domain.UpdateInfo access$5(cn.itcast.mobilesafe.activity.SplashActivity) -> f
+    long access$6(cn.itcast.mobilesafe.activity.SplashActivity) -> g
+    android.content.SharedPreferences access$7(cn.itcast.mobilesafe.activity.SplashActivity) -> h
+    void access$9(cn.itcast.mobilesafe.activity.SplashActivity,cn.itcast.mobilesafe.domain.UpdateInfo) -> a
+    java.lang.String access$10(cn.itcast.mobilesafe.activity.SplashActivity) -> i
+    void access$11(cn.itcast.mobilesafe.activity.SplashActivity,android.app.ProgressDialog) -> a
+cn.itcast.mobilesafe.activity.SplashActivity$1 -> cn.itcast.mobilesafe.activity.aq:
+    cn.itcast.mobilesafe.activity.SplashActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+cn.itcast.mobilesafe.activity.SplashActivity$2 -> cn.itcast.mobilesafe.activity.ap:
+    cn.itcast.mobilesafe.activity.SplashActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.SplashActivity$3 -> cn.itcast.mobilesafe.activity.ao:
+    cn.itcast.mobilesafe.activity.SplashActivity this$0 -> a
+    void onClick(android.content.DialogInterface,int) -> onClick
+cn.itcast.mobilesafe.activity.SplashActivity$CheckVersionTask -> cn.itcast.mobilesafe.activity.ad:
+    cn.itcast.mobilesafe.activity.SplashActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.SplashActivity$DownloadApkTask -> cn.itcast.mobilesafe.activity.ac:
+    cn.itcast.mobilesafe.activity.SplashActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.SplashActivity$DownloadDBTask -> cn.itcast.mobilesafe.activity.e:
+    cn.itcast.mobilesafe.activity.SplashActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.TaskManagerActivity -> cn.itcast.mobilesafe.activity.TaskManagerActivity:
+    android.widget.TextView tv_task_manager_task_count -> a
+    android.widget.TextView tv_task_manager_task_memory -> b
+    android.widget.RelativeLayout rl_loading -> c
+    android.widget.ListView lv_taskmanager -> d
+    android.app.ActivityManager am -> e
+    java.util.List taskInfos -> f
+    java.util.List userTaskInfos -> g
+    java.util.List systemTaskInfos -> h
+    cn.itcast.mobilesafe.activity.TaskManagerActivity$TaskManagerAdapter mAdapter -> i
+    android.content.SharedPreferences sp -> j
+    long total -> k
+    android.os.Handler mHandler -> l
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+    void kill_process(android.view.View) -> kill_process
+    void displaysetup(android.view.View) -> displaysetup
+    void onActivityResult(int,int,android.content.Intent) -> onActivityResult
+    void access$0(cn.itcast.mobilesafe.activity.TaskManagerActivity,long) -> a
+    java.util.List access$1(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> a
+    long access$2(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> b
+    android.widget.TextView access$3(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> c
+    void access$4(cn.itcast.mobilesafe.activity.TaskManagerActivity,cn.itcast.mobilesafe.activity.TaskManagerActivity$TaskManagerAdapter) -> a
+    cn.itcast.mobilesafe.activity.TaskManagerActivity$TaskManagerAdapter access$5(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> d
+    android.widget.RelativeLayout access$6(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> e
+    android.widget.ListView access$7(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> f
+    java.util.List access$9(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> g
+    android.content.SharedPreferences access$10(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> h
+    java.util.List access$11(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> i
+    void access$12(cn.itcast.mobilesafe.activity.TaskManagerActivity,java.util.List) -> a
+    void access$13(cn.itcast.mobilesafe.activity.TaskManagerActivity,java.util.List) -> b
+    void access$14(cn.itcast.mobilesafe.activity.TaskManagerActivity,java.util.List) -> c
+    android.os.Handler access$15(cn.itcast.mobilesafe.activity.TaskManagerActivity) -> j
+cn.itcast.mobilesafe.activity.TaskManagerActivity$1 -> cn.itcast.mobilesafe.activity.y:
+    cn.itcast.mobilesafe.activity.TaskManagerActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+cn.itcast.mobilesafe.activity.TaskManagerActivity$2 -> cn.itcast.mobilesafe.activity.ab:
+    cn.itcast.mobilesafe.activity.TaskManagerActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.TaskManagerActivity$MyOnItemClickListener -> cn.itcast.mobilesafe.activity.q:
+    cn.itcast.mobilesafe.activity.TaskManagerActivity this$0 -> a
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+cn.itcast.mobilesafe.activity.TaskManagerActivity$MyOnItemLongClickListener -> cn.itcast.mobilesafe.activity.ae:
+    cn.itcast.mobilesafe.activity.TaskManagerActivity this$0 -> a
+    boolean onItemLongClick(android.widget.AdapterView,android.view.View,int,long) -> onItemLongClick
+cn.itcast.mobilesafe.activity.TaskManagerActivity$TaskManagerAdapter -> cn.itcast.mobilesafe.activity.w:
+    android.view.LayoutInflater mInflater -> a
+    java.util.List infos -> b
+    cn.itcast.mobilesafe.activity.TaskManagerActivity this$0 -> c
+    void setInfos(java.util.List) -> a
+    boolean isEnabled(int) -> isEnabled
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.itcast.mobilesafe.activity.TaskManagerActivity$ViewHolder -> cn.itcast.mobilesafe.activity.an:
+    android.widget.ImageView iv_task_manager_icon -> a
+    android.widget.TextView tv_task_manager_name -> b
+    android.widget.TextView tv_task_manager_memory -> c
+    android.widget.CheckBox cb_task_manager_selected -> d
+cn.itcast.mobilesafe.activity.TaskManagerSettingActivity -> cn.itcast.mobilesafe.activity.TaskManagerSettingActivity:
+    android.widget.CheckBox cb_task_manager_setting_display -> a
+    android.widget.CheckBox cb_task_manager_setting_auto_clear -> b
+    android.content.SharedPreferences sp -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+cn.itcast.mobilesafe.activity.TrafficManagerActivity -> cn.itcast.mobilesafe.activity.TrafficManagerActivity:
+    android.widget.TextView tv_traffic_manager_mobile -> a
+    android.widget.TextView tv_traffic_manager_wifi -> b
+    android.widget.ListView lv_traffic_manager_content -> c
+    cn.itcast.mobilesafe.engine.TrafficManagerService trafficManagerService -> d
+    java.util.List realTrafficInfos -> e
+    cn.itcast.mobilesafe.activity.TrafficManagerActivity$TrafficManagerAdapter mAdapter -> f
+    java.util.Timer timer -> g
+    java.util.TimerTask task -> h
+    android.os.Handler mHandler -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    long getMobileTotal() -> a
+    void onDestroy() -> onDestroy
+    android.os.Handler access$0(cn.itcast.mobilesafe.activity.TrafficManagerActivity) -> a
+    void access$1(cn.itcast.mobilesafe.activity.TrafficManagerActivity,cn.itcast.mobilesafe.activity.TrafficManagerActivity$TrafficManagerAdapter) -> a
+    android.widget.ListView access$2(cn.itcast.mobilesafe.activity.TrafficManagerActivity) -> b
+    cn.itcast.mobilesafe.activity.TrafficManagerActivity$TrafficManagerAdapter access$3(cn.itcast.mobilesafe.activity.TrafficManagerActivity) -> c
+    void access$4(cn.itcast.mobilesafe.activity.TrafficManagerActivity,java.util.Timer) -> a
+    java.util.Timer access$5(cn.itcast.mobilesafe.activity.TrafficManagerActivity) -> d
+    java.util.TimerTask access$6(cn.itcast.mobilesafe.activity.TrafficManagerActivity) -> e
+    java.util.List access$7(cn.itcast.mobilesafe.activity.TrafficManagerActivity) -> f
+    cn.itcast.mobilesafe.engine.TrafficManagerService access$8(cn.itcast.mobilesafe.activity.TrafficManagerActivity) -> g
+    void access$9(cn.itcast.mobilesafe.activity.TrafficManagerActivity,java.util.List) -> a
+cn.itcast.mobilesafe.activity.TrafficManagerActivity$1 -> cn.itcast.mobilesafe.activity.ai:
+    cn.itcast.mobilesafe.activity.TrafficManagerActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.TrafficManagerActivity$2 -> cn.itcast.mobilesafe.activity.ag:
+    cn.itcast.mobilesafe.activity.TrafficManagerActivity this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+cn.itcast.mobilesafe.activity.TrafficManagerActivity$3 -> cn.itcast.mobilesafe.activity.ah:
+    cn.itcast.mobilesafe.activity.TrafficManagerActivity this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.activity.TrafficManagerActivity$TrafficManagerAdapter -> cn.itcast.mobilesafe.activity.ak:
+    android.view.LayoutInflater mInflater -> a
+    cn.itcast.mobilesafe.activity.TrafficManagerActivity this$0 -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.itcast.mobilesafe.activity.TrafficManagerActivity$ViewHolder -> cn.itcast.mobilesafe.activity.af:
+    android.widget.ImageView iv_appicon -> a
+    android.widget.TextView tv_appname -> b
+    android.widget.TextView tv_apptraffic -> c
+    android.widget.TextView tv_apptx -> d
+    android.widget.TextView tv_apprx -> e
+cn.itcast.mobilesafe.adapter.AppManagerAdapter -> cn.itcast.mobilesafe.c.b:
+    android.content.Context context -> a
+    android.view.LayoutInflater mInflater -> b
+    java.util.List appInfos -> c
+    void setAppInfos(java.util.List) -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.itcast.mobilesafe.adapter.BlackNumberAdapter -> cn.itcast.mobilesafe.c.c:
+    android.content.Context context -> a
+    java.util.List blacknumbers -> b
+    android.view.LayoutInflater mInflater -> c
+    void setBlacknumbers(java.util.List) -> a
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.itcast.mobilesafe.adapter.ContactInfoAdapter -> cn.itcast.mobilesafe.c.d:
+    android.content.Context context -> a
+    java.util.List contacts -> b
+    android.view.LayoutInflater mInflater -> c
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.itcast.mobilesafe.adapter.MainAdapter -> cn.itcast.mobilesafe.c.a:
+    android.content.SharedPreferences sp -> a
+    int[] images -> b
+    java.lang.String[] names -> c
+    android.view.LayoutInflater mInflater -> d
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+cn.itcast.mobilesafe.dao.AppLockDao -> cn.itcast.mobilesafe.f.b:
+    android.database.sqlite.SQLiteOpenHelper mOpenHelper -> a
+    java.util.List findAll() -> a
+cn.itcast.mobilesafe.dao.BlackNumberDao -> cn.itcast.mobilesafe.f.a:
+    android.database.sqlite.SQLiteOpenHelper mOpenHelper -> a
+    void add(java.lang.String) -> a
+    boolean isBlackNumber(java.lang.String) -> b
+    int queryId(java.lang.String) -> c
+    void delete(java.lang.String) -> d
+    void update(int,java.lang.String) -> a
+    java.util.List findAll() -> a
+cn.itcast.mobilesafe.db.AppLockDBHelper -> cn.itcast.mobilesafe.a.b:
+    android.database.sqlite.SQLiteOpenHelper mInstance -> a
+    android.database.sqlite.SQLiteOpenHelper getInstance(android.content.Context) -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+cn.itcast.mobilesafe.db.BlackNumberDBHelper -> cn.itcast.mobilesafe.a.a:
+    android.database.sqlite.SQLiteOpenHelper mInstance -> a
+    android.database.sqlite.SQLiteOpenHelper getInstance(android.content.Context) -> a
+    void onCreate(android.database.sqlite.SQLiteDatabase) -> onCreate
+    void onUpgrade(android.database.sqlite.SQLiteDatabase,int,int) -> onUpgrade
+cn.itcast.mobilesafe.domain.AppInfo -> cn.itcast.mobilesafe.e.f:
+    android.graphics.drawable.Drawable app_icon -> a
+    java.lang.String app_name -> b
+    java.lang.String app_version -> c
+    java.lang.String packagename -> d
+    boolean isUserApp -> e
+    android.graphics.drawable.Drawable getApp_icon() -> a
+    void setApp_icon(android.graphics.drawable.Drawable) -> a
+    java.lang.String getApp_name() -> b
+    void setApp_name(java.lang.String) -> a
+    java.lang.String getApp_version() -> c
+    void setApp_version(java.lang.String) -> b
+    java.lang.String getPackagename() -> d
+    void setPackagename(java.lang.String) -> c
+    boolean isUserApp() -> e
+    void setUserApp(boolean) -> a
+    java.lang.String toString() -> toString
+cn.itcast.mobilesafe.domain.ContactInfo -> cn.itcast.mobilesafe.e.c:
+    java.lang.String name -> a
+    java.lang.String number -> b
+    java.lang.String getName() -> a
+    void setName(java.lang.String) -> a
+    java.lang.String getNumber() -> b
+    void setNumber(java.lang.String) -> b
+    java.lang.String toString() -> toString
+cn.itcast.mobilesafe.domain.SmsInfo -> cn.itcast.mobilesafe.e.e:
+    java.lang.String address -> a
+    java.lang.String date -> b
+    java.lang.String type -> c
+    java.lang.String body -> d
+    java.lang.String getAddress() -> a
+    void setAddress(java.lang.String) -> a
+    java.lang.String getDate() -> b
+    void setDate(java.lang.String) -> b
+    java.lang.String getType() -> c
+    void setType(java.lang.String) -> c
+    java.lang.String getBody() -> d
+    void setBody(java.lang.String) -> d
+    java.lang.String toString() -> toString
+cn.itcast.mobilesafe.domain.TaskInfo -> cn.itcast.mobilesafe.e.b:
+    android.graphics.drawable.Drawable task_icon -> a
+    java.lang.String task_name -> b
+    java.lang.String packageName -> c
+    int pid -> d
+    long task_memory -> e
+    boolean isChecked -> f
+    boolean isUserTask -> g
+    android.graphics.drawable.Drawable getTask_icon() -> a
+    void setTask_icon(android.graphics.drawable.Drawable) -> a
+    java.lang.String getTask_name() -> b
+    void setTask_name(java.lang.String) -> a
+    java.lang.String getPackageName() -> c
+    void setPackageName(java.lang.String) -> b
+    void setPid(int) -> a
+    long getTask_memory() -> d
+    void setTask_memory(long) -> a
+    boolean isChecked() -> e
+    void setChecked(boolean) -> a
+    boolean isUserTask() -> f
+    void setUserTask(boolean) -> b
+    java.lang.String toString() -> toString
+cn.itcast.mobilesafe.domain.TrafficInfo -> cn.itcast.mobilesafe.e.a:
+    android.graphics.drawable.Drawable appicon -> a
+    java.lang.String appname -> b
+    java.lang.String packageName -> c
+    int uid -> d
+    android.graphics.drawable.Drawable getAppicon() -> a
+    java.lang.String getAppname() -> b
+    int getUid() -> c
+    java.lang.String toString() -> toString
+cn.itcast.mobilesafe.domain.UpdateInfo -> cn.itcast.mobilesafe.e.d:
+    java.lang.String version -> a
+    java.lang.String url -> b
+    java.lang.String description -> c
+    java.lang.String getVersion() -> a
+    void setVersion(java.lang.String) -> a
+    java.lang.String getUrl() -> b
+    void setUrl(java.lang.String) -> b
+    java.lang.String getDescription() -> c
+    void setDescription(java.lang.String) -> c
+    java.lang.String toString() -> toString
+cn.itcast.mobilesafe.engine.AddressQueryService -> cn.itcast.mobilesafe.b.i:
+    boolean isExist() -> a
+    java.lang.String query(java.lang.String) -> a
+cn.itcast.mobilesafe.engine.AppInfoService -> cn.itcast.mobilesafe.b.b:
+    android.content.Context context -> a
+    android.content.pm.PackageManager pm -> b
+    java.util.List getAppInfos() -> a
+cn.itcast.mobilesafe.engine.CommonNumberService -> cn.itcast.mobilesafe.b.f:
+    android.content.Context context -> a
+    java.util.List getGroupData() -> a
+    java.util.List getChildData() -> b
+cn.itcast.mobilesafe.engine.ContactInfoService -> cn.itcast.mobilesafe.b.h:
+    android.content.Context context -> a
+    java.util.List getContacts() -> a
+cn.itcast.mobilesafe.engine.GPSInfoService -> cn.itcast.mobilesafe.b.d:
+    cn.itcast.mobilesafe.engine.GPSInfoService mInstance -> a
+    android.location.LocationManager locationManager -> b
+    android.content.SharedPreferences sp -> c
+    cn.itcast.mobilesafe.engine.GPSInfoService$MyLocationListener listener -> d
+    cn.itcast.mobilesafe.engine.GPSInfoService getInstance(android.content.Context) -> a
+    void registenerLocationChangeListener() -> a
+    java.lang.String getLastLocation() -> b
+    android.content.SharedPreferences access$0(cn.itcast.mobilesafe.engine.GPSInfoService) -> a
+cn.itcast.mobilesafe.engine.GPSInfoService$MyLocationListener -> cn.itcast.mobilesafe.b.g:
+    cn.itcast.mobilesafe.engine.GPSInfoService this$0 -> a
+    void onLocationChanged(android.location.Location) -> onLocationChanged
+    void onStatusChanged(java.lang.String,int,android.os.Bundle) -> onStatusChanged
+    void onProviderEnabled(java.lang.String) -> onProviderEnabled
+    void onProviderDisabled(java.lang.String) -> onProviderDisabled
+cn.itcast.mobilesafe.engine.SmsInfoService -> cn.itcast.mobilesafe.b.e:
+    android.content.Context context -> a
+    java.util.List getSmsInfos() -> a
+cn.itcast.mobilesafe.engine.TrafficManagerService -> cn.itcast.mobilesafe.b.c:
+    android.content.Context context -> a
+    android.content.pm.PackageManager pm -> b
+    java.util.List getInternetTrafficInfos() -> a
+cn.itcast.mobilesafe.engine.UpdateInfoService -> cn.itcast.mobilesafe.b.a:
+    cn.itcast.mobilesafe.domain.UpdateInfo getUpdateInfo(java.lang.String) -> a
+    cn.itcast.mobilesafe.domain.UpdateInfo parserUpdateInfo(java.io.InputStream) -> a
+cn.itcast.mobilesafe.inter.IService -> cn.itcast.mobilesafe.d.a:
+    void addTemp(java.lang.String) -> a
+cn.itcast.mobilesafe.provider.AppLockProvider -> cn.itcast.mobilesafe.provider.AppLockProvider:
+    android.database.sqlite.SQLiteOpenHelper mOpenHelper -> a
+    android.content.UriMatcher matcher -> b
+    boolean onCreate() -> onCreate
+    android.database.Cursor query(android.net.Uri,java.lang.String[],java.lang.String,java.lang.String[],java.lang.String) -> query
+    java.lang.String getType(android.net.Uri) -> getType
+    android.net.Uri insert(android.net.Uri,android.content.ContentValues) -> insert
+    int delete(android.net.Uri,java.lang.String,java.lang.String[]) -> delete
+    int update(android.net.Uri,android.content.ContentValues,java.lang.String,java.lang.String[]) -> update
+cn.itcast.mobilesafe.receiver.BootCompleteReceiver -> cn.itcast.mobilesafe.receiver.BootCompleteReceiver:
+    android.content.SharedPreferences sp -> a
+    android.telephony.TelephonyManager tm -> b
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+cn.itcast.mobilesafe.receiver.KillProcessReceiver -> cn.itcast.mobilesafe.receiver.KillProcessReceiver:
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+cn.itcast.mobilesafe.receiver.MyAdmin -> cn.itcast.mobilesafe.receiver.MyAdmin:
+cn.itcast.mobilesafe.receiver.PhoneReceiver -> cn.itcast.mobilesafe.receiver.PhoneReceiver:
+    android.content.SharedPreferences sp -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+cn.itcast.mobilesafe.receiver.ProcessReceiver -> cn.itcast.mobilesafe.receiver.ProcessReceiver:
+    void onEnabled(android.content.Context) -> onEnabled
+    void onUpdate(android.content.Context,android.appwidget.AppWidgetManager,int[]) -> onUpdate
+    void onDeleted(android.content.Context,int[]) -> onDeleted
+    void onDisabled(android.content.Context) -> onDisabled
+cn.itcast.mobilesafe.receiver.SmsRecevier -> cn.itcast.mobilesafe.receiver.SmsRecevier:
+    android.content.SharedPreferences sp -> a
+    android.app.admin.DevicePolicyManager devicePolicyManager -> b
+    cn.itcast.mobilesafe.dao.BlackNumberDao blackNumberDao -> c
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+cn.itcast.mobilesafe.service.AppLockService -> cn.itcast.mobilesafe.service.AppLockService:
+    android.app.ActivityManager am -> a
+    cn.itcast.mobilesafe.dao.AppLockDao appLockDao -> b
+    java.util.List appLocks -> c
+    java.util.List tempAppLocks -> d
+    cn.itcast.mobilesafe.service.AppLockService$MyContentObserver observer -> e
+    android.app.KeyguardManager keyguardManager -> f
+    cn.itcast.mobilesafe.service.AppLockService$LockScreenReceiver receiver -> g
+    cn.itcast.mobilesafe.service.AppLockService$MyBinder ibinder -> h
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    cn.itcast.mobilesafe.dao.AppLockDao access$0(cn.itcast.mobilesafe.service.AppLockService) -> a
+    void access$1(cn.itcast.mobilesafe.service.AppLockService,java.util.List) -> a
+    java.util.List access$2(cn.itcast.mobilesafe.service.AppLockService) -> b
+    void access$3(cn.itcast.mobilesafe.service.AppLockService,java.lang.String) -> a
+    android.app.KeyguardManager access$4(cn.itcast.mobilesafe.service.AppLockService) -> c
+    android.app.ActivityManager access$5(cn.itcast.mobilesafe.service.AppLockService) -> d
+    java.util.List access$6(cn.itcast.mobilesafe.service.AppLockService) -> e
+cn.itcast.mobilesafe.service.AppLockService$1 -> cn.itcast.mobilesafe.service.j:
+    cn.itcast.mobilesafe.service.AppLockService this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.service.AppLockService$LockScreenReceiver -> cn.itcast.mobilesafe.service.f:
+    cn.itcast.mobilesafe.service.AppLockService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+cn.itcast.mobilesafe.service.AppLockService$MyBinder -> cn.itcast.mobilesafe.service.i:
+    cn.itcast.mobilesafe.service.AppLockService this$0 -> a
+    void addTemp(java.lang.String) -> a
+cn.itcast.mobilesafe.service.AppLockService$MyContentObserver -> cn.itcast.mobilesafe.service.a:
+    cn.itcast.mobilesafe.service.AppLockService this$0 -> a
+    void onChange(boolean) -> onChange
+cn.itcast.mobilesafe.service.AutoClearService -> cn.itcast.mobilesafe.service.AutoClearService:
+    android.content.SharedPreferences sp -> a
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    android.content.SharedPreferences access$0(cn.itcast.mobilesafe.service.AutoClearService) -> a
+cn.itcast.mobilesafe.service.AutoClearService$LockScreenReceiver -> cn.itcast.mobilesafe.service.b:
+    cn.itcast.mobilesafe.service.AutoClearService this$0 -> a
+    void onReceive(android.content.Context,android.content.Intent) -> onReceive
+cn.itcast.mobilesafe.service.BackupSmsService -> cn.itcast.mobilesafe.service.BackupSmsService:
+    cn.itcast.mobilesafe.engine.SmsInfoService smsInfoService -> a
+    android.app.NotificationManager nm -> b
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    cn.itcast.mobilesafe.engine.SmsInfoService access$0(cn.itcast.mobilesafe.service.BackupSmsService) -> a
+    android.app.NotificationManager access$1(cn.itcast.mobilesafe.service.BackupSmsService) -> b
+cn.itcast.mobilesafe.service.BackupSmsService$1 -> cn.itcast.mobilesafe.service.h:
+    cn.itcast.mobilesafe.service.BackupSmsService this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.service.BlackNumberService -> cn.itcast.mobilesafe.service.BlackNumberService:
+    android.telephony.TelephonyManager tm -> a
+    cn.itcast.mobilesafe.service.BlackNumberService$MyPhoneStateListener listener -> b
+    cn.itcast.mobilesafe.dao.BlackNumberDao blackNumberDao -> c
+    android.content.SharedPreferences sp -> d
+    android.app.NotificationManager nm -> e
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    android.content.SharedPreferences access$0(cn.itcast.mobilesafe.service.BlackNumberService) -> a
+    cn.itcast.mobilesafe.dao.BlackNumberDao access$1(cn.itcast.mobilesafe.service.BlackNumberService) -> b
+    android.app.NotificationManager access$3(cn.itcast.mobilesafe.service.BlackNumberService) -> c
+cn.itcast.mobilesafe.service.BlackNumberService$MyContentObserver -> cn.itcast.mobilesafe.service.g:
+    java.lang.String incomingNumber -> a
+    cn.itcast.mobilesafe.service.BlackNumberService this$0 -> b
+    void onChange(boolean) -> onChange
+cn.itcast.mobilesafe.service.BlackNumberService$MyPhoneStateListener -> cn.itcast.mobilesafe.service.e:
+    long startTime -> a
+    cn.itcast.mobilesafe.service.BlackNumberService this$0 -> b
+    void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+cn.itcast.mobilesafe.service.ProcessWidgetService -> cn.itcast.mobilesafe.service.ProcessWidgetService:
+    java.util.Timer timer -> a
+    java.util.TimerTask task -> b
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+cn.itcast.mobilesafe.service.ProcessWidgetService$1 -> cn.itcast.mobilesafe.service.c:
+    cn.itcast.mobilesafe.service.ProcessWidgetService this$0 -> a
+    void run() -> run
+cn.itcast.mobilesafe.service.ShowAddressService -> cn.itcast.mobilesafe.service.ShowAddressService:
+    android.telephony.TelephonyManager tm -> a
+    cn.itcast.mobilesafe.service.ShowAddressService$MyPhoneStateListener listener -> b
+    android.view.WindowManager wm -> c
+    android.view.LayoutInflater mInflater -> d
+    android.view.View view -> e
+    android.widget.TextView tv_number -> f
+    android.widget.TextView tv_address -> g
+    android.widget.RelativeLayout rl_show_address -> h
+    cn.itcast.mobilesafe.engine.AddressQueryService addressQueryService -> i
+    android.content.SharedPreferences sp -> j
+    boolean isadd -> k
+    void onCreate() -> onCreate
+    android.os.IBinder onBind(android.content.Intent) -> onBind
+    void onDestroy() -> onDestroy
+    android.content.SharedPreferences access$0(cn.itcast.mobilesafe.service.ShowAddressService) -> a
+    android.widget.RelativeLayout access$1(cn.itcast.mobilesafe.service.ShowAddressService) -> b
+    android.widget.TextView access$3(cn.itcast.mobilesafe.service.ShowAddressService) -> c
+    android.widget.TextView access$4(cn.itcast.mobilesafe.service.ShowAddressService) -> d
+    android.view.WindowManager access$5(cn.itcast.mobilesafe.service.ShowAddressService) -> e
+    android.view.View access$6(cn.itcast.mobilesafe.service.ShowAddressService) -> f
+    void access$7$7e64f6bf(cn.itcast.mobilesafe.service.ShowAddressService) -> g
+    boolean access$8(cn.itcast.mobilesafe.service.ShowAddressService) -> h
+cn.itcast.mobilesafe.service.ShowAddressService$MyPhoneStateListener -> cn.itcast.mobilesafe.service.d:
+    cn.itcast.mobilesafe.service.ShowAddressService this$0 -> a
+    void onCallStateChanged(int,java.lang.String) -> onCallStateChanged
+cn.itcast.mobilesafe.utils.DensityUtil -> cn.itcast.mobilesafe.g.e:
+    int px2dip(android.content.Context,float) -> a
+cn.itcast.mobilesafe.utils.DownloadManager -> cn.itcast.mobilesafe.g.d:
+    boolean download(java.lang.String,android.app.ProgressDialog) -> a
+    java.lang.String getFileName(java.lang.String) -> a
+cn.itcast.mobilesafe.utils.MD5 -> cn.itcast.mobilesafe.g.c:
+    java.lang.String getData(java.lang.String) -> a
+cn.itcast.mobilesafe.utils.TaskUtil -> cn.itcast.mobilesafe.g.a:
+    int getRuninngAppProcessInfoSize(android.content.Context) -> a
+    long getAvailMem(android.content.Context) -> b
+    java.util.List getTaskInfos(android.content.Context) -> c
+    void killAllProcess(android.content.Context) -> d
+cn.itcast.mobilesafe.utils.TextFormat -> cn.itcast.mobilesafe.g.b:
+    java.lang.String formatByte(long) -> a
+com.android.internal.telephony.ITelephony -> a.a.a.a.c:
+    void dial(java.lang.String) -> a
+    void call(java.lang.String) -> b
+    boolean showCallScreen() -> a
+    boolean showCallScreenWithDialpad(boolean) -> a
+    boolean endCall() -> b
+    void answerRingingCall() -> c
+    void silenceRinger() -> d
+    boolean isOffhook() -> e
+    boolean isRinging() -> f
+    boolean isIdle() -> g
+    boolean isRadioOn() -> h
+    boolean isSimPinEnabled() -> i
+    void cancelMissedCallsNotification() -> j
+    boolean supplyPin(java.lang.String) -> c
+    boolean handlePinMmi(java.lang.String) -> d
+    void toggleRadioOnOff() -> k
+    boolean setRadio(boolean) -> b
+    void updateServiceLocation() -> l
+    void enableLocationUpdates() -> m
+    void disableLocationUpdates() -> n
+    int enableApnType(java.lang.String) -> e
+    int disableApnType(java.lang.String) -> f
+    boolean enableDataConnectivity() -> o
+    boolean disableDataConnectivity() -> p
+    boolean isDataConnectivityPossible() -> q
+    android.os.Bundle getCellLocation() -> r
+    java.util.List getNeighboringCellInfo() -> s
+    int getCallState() -> t
+    int getDataActivity() -> u
+    int getDataState() -> v
+    int getActivePhoneType() -> w
+    int getCdmaEriIconIndex() -> x
+    int getCdmaEriIconMode() -> y
+    java.lang.String getCdmaEriText() -> z
+    boolean getCdmaNeedsProvisioning() -> A
+    int getVoiceMessageCount() -> B
+    int getNetworkType() -> C
+    boolean hasIccCard() -> D
+com.android.internal.telephony.ITelephony$Stub -> a.a.a.a.a:
+    com.android.internal.telephony.ITelephony asInterface(android.os.IBinder) -> a
+    boolean onTransact(int,android.os.Parcel,android.os.Parcel,int) -> onTransact
+com.android.internal.telephony.ITelephony$Stub$Proxy -> a.a.a.a.b:
+    android.os.IBinder mRemote -> a
+    android.os.IBinder asBinder() -> asBinder
+    void dial(java.lang.String) -> a
+    void call(java.lang.String) -> b
+    boolean showCallScreen() -> a
+    boolean showCallScreenWithDialpad(boolean) -> a
+    boolean endCall() -> b
+    void answerRingingCall() -> c
+    void silenceRinger() -> d
+    boolean isOffhook() -> e
+    boolean isRinging() -> f
+    boolean isIdle() -> g
+    boolean isRadioOn() -> h
+    boolean isSimPinEnabled() -> i
+    void cancelMissedCallsNotification() -> j
+    boolean supplyPin(java.lang.String) -> c
+    boolean handlePinMmi(java.lang.String) -> d
+    void toggleRadioOnOff() -> k
+    boolean setRadio(boolean) -> b
+    void updateServiceLocation() -> l
+    void enableLocationUpdates() -> m
+    void disableLocationUpdates() -> n
+    int enableApnType(java.lang.String) -> e
+    int disableApnType(java.lang.String) -> f
+    boolean enableDataConnectivity() -> o
+    boolean disableDataConnectivity() -> p
+    boolean isDataConnectivityPossible() -> q
+    android.os.Bundle getCellLocation() -> r
+    java.util.List getNeighboringCellInfo() -> s
+    int getCallState() -> t
+    int getDataActivity() -> u
+    int getDataState() -> v
+    int getActivePhoneType() -> w
+    int getCdmaEriIconIndex() -> x
+    int getCdmaEriIconMode() -> y
+    java.lang.String getCdmaEriText() -> z
+    boolean getCdmaNeedsProvisioning() -> A
+    int getVoiceMessageCount() -> B
+    int getNetworkType() -> C
+    boolean hasIccCard() -> D
